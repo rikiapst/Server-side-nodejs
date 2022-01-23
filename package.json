@@ -1,0 +1,30 @@
+{
+  "name": "server-side-nodejs",
+  "version": "1.0.0",
+  "description": "Basic server side programming with Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rikiapst/Server-side-nodejs.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Express",
+    "server",
+    "side",
+    "API",
+    "Data"
+  ],
+  "author": "Rikia Stewart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rikiapst/Server-side-nodejs/issues"
+  },
+  "homepage": "https://github.com/rikiapst/Server-side-nodejs#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
