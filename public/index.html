@@ -13,14 +13,22 @@
     <a href="http://localhost:4000/app.html">Page 2</a>
   </header>
   <main>
-
+    <div>
+      <ul>
+        <li id="lon"></li>
+        <li id="lad"></li>
+      </ul>
+    </div>
   </main>
-  <footer>
-
-  </footer>
   <script>
     if ('geolocation' in navigator) {
       console.log('Geolocation Available')
+      navigator.geolocation.getCurrentPosition(position => {
+        console.log(position);
+        document.getElementById('lon').innerText = position.coords.longitude;
+        document.getElementById('lad').innerText = position.coords.latitude;
+      }
+      )
     } else {
       console.log('Geolocation Not Available')
     }
